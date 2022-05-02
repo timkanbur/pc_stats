@@ -115,6 +115,7 @@ echo.
 echo   [1] Systemdiagnose (dxdiag)
 echo   [2] Geraetemanager (devmgmt)
 echo   [3] Partitionsmanager (diskmgmt)
+echo   [4] Beenden
 echo.
 
 set asw3=0
@@ -122,6 +123,7 @@ set /p asw1="Tool auswählen: "
 if %asw3%==1 start dxdiag
 if %asw3%==2 start devmgmt.msc
 if %asw3%==3 start diskmgmt.msc
+if %asw3%==4 goto end
 
 :end
 color 4
